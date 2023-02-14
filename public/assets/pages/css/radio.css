@@ -1,0 +1,465 @@
+
+
+#header-content{
+    width: 100%;
+    padding: 15px 70px 15px 70px ;
+}
+
+#logo img{
+    width: 150px;
+}
+
+#seguro img{
+    width: 200px;
+}
+
+#cron{
+    background-color: #3c84c8;
+    padding: 10px 0 10px 0;
+}
+
+
+#oferta, #timer{
+    margin-left: 5px;
+}
+
+#cron span, #oferta{
+    color: white;
+}
+
+#timer{
+    color: #fcc827;
+    font-weight: 500;
+}
+
+#checkout-container{
+    width: 90%;
+    padding-top: 30px;
+    align-items: flex-start!important;
+}
+
+#buy-form, #resumo{
+    background-color: white;
+
+}
+
+#buy-form{
+    width: auto;
+    padding: 30px 30px 0 30px;
+    width: 70%;
+}
+
+
+
+#resumo{
+    width: 30%;
+    margin-left: 30px;
+    padding: 30px;
+}
+
+.title-form div{
+    align-items: flex-end!important;
+}
+
+.title-form h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.title-form i, .title-form span{
+    font-size: 22px;
+    color: #84deb3;
+    margin-left: 15px;
+    /* margin-bottom: 1px; */
+}
+
+.legend-form{
+    font-size: 12px;
+    color:#555555;
+    margin-top: 10px;
+}
+
+.div-form{
+    margin-top: 30px;
+}
+
+#wpp-novidade{
+    margin-top: 20px;
+    align-items:flex-start!important;
+}
+
+#wpp-novidade input{
+    margin: 7px 0 0 0;
+    outline: 0;
+}
+
+#wpp-novidade label{
+    margin-left: 10px;
+    line-height: 30px;
+
+}
+
+#wpp-novidade a{
+    text-decoration: none;
+    color:#30cc6c ;
+}
+
+#wpp-novidade a:hover{
+    color:#06ad46 ;
+}
+
+#wpp-novidade span{
+    background-color:#30cc6c;
+    color: white;
+    padding: 5px;
+
+}
+
+#labelMetodos {
+    color: #404040;
+    font-family: "Inter", Sans-serif;
+}
+
+#labelParcelas {
+    color: #646464;
+    font-size: 11pt;
+}
+
+.div-form label{
+    display: block;
+    font-size:14px;
+    margin-bottom: 5px;
+}
+
+.div-form .digit-field{
+    height: 45px;
+    padding: 12px 10px;
+    width: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #646464;
+    outline: none;
+    border: solid 1px #c5c6c9;
+    font-size: 11pt;
+    font-family:'Roboto', sans-serif;
+    transition: 0.3s border-color;
+}
+
+.div-form .digit-field:focus{
+    border-color:#0003be!important;
+}
+
+.div-form .digit-field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #646464;
+    opacity: 1;
+  }
+
+.div-form .digit-field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #646464;
+  }
+
+.div-form .digit-field::-ms-input-placeholder { /* Microsoft Edge */
+    color: #646464;
+  }
+
+.space-between .div-form{
+    width: 49%;
+}
+
+.title-margin{
+    margin-top: 30px;
+}
+
+.radio-section{/**/
+    margin-top: 20px;
+}
+
+
+
+.radio-div{/**/
+    padding:20px;
+    border: 1px solid #c5c6c9;
+    margin-bottom: 10px;
+    background-color: #4959ff17;
+    border-radius: 8px;
+}
+
+/* .radio:checked .radio-div {
+    display: none;
+} */
+
+.selecionado{
+    display: none;
+}
+
+
+
+.radio-div input{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    outline: 0;
+}
+
+.radio-div label{
+    font-size: 14.5px;
+    color: #202233;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.radio-div .frete_price{
+    font-size: 14.5px;
+    color: #00d994;
+    font-weight: 700;
+}
+
+#divisao{
+    width:100%;
+    height: 40px;
+    background-color:#f1f4f8;
+    color: #f1f4f8;
+    margin-left: -30px;
+    padding-right: 60px;
+    margin-top: 40px;
+}
+
+#brand-cards img{
+    height: 25px;
+    margin-right: 5px;
+}
+
+#op-cartao{
+    margin-left: 30px;
+}
+
+#op-cartao label{
+    margin-left: 0;
+}
+
+#brand-cards{
+    margin-top: 7px;
+}
+
+.payment-icon{
+    color: #363636;
+}
+
+#caso-credito{
+    display: none;
+    padding-bottom: 30px;
+}
+
+
+
+#ciente-email{
+    padding: 15px 0 15px 15px;
+}
+
+#ciente-email input{
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+
+#ciente-email label{
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 12px;
+    color: #202223;
+    line-height: 16px;
+}
+
+#container-botao{
+    width:100%;
+    height: auto;
+    background-color:#f1f4f8;
+    margin-left: -30px;
+    padding-right: 60px;
+    margin-top: 30px;
+    padding-top: 50px;
+
+}
+
+#container-botao button{
+    background-color:#27e248;
+    font-size: .9rem;
+    width: 100%;
+    max-width:500px;
+    letter-spacing: .5px;
+    border-radius: 4px;
+    padding: 15px;
+    margin-right: -60px;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: 'Rubik';
+    font-weight: 500;
+    transition: 0.3s background-color;
+}
+
+#container-botao button span{
+    margin-right: 10px;
+}
+
+#container-botao button:hover{
+    background-color: #0caf2a;
+    cursor: pointer;
+}
+
+#aviso{
+    margin-right: -60px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(59, 59, 59);
+    word-break: break-word;
+}
+
+
+#resumo h2{
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: bold;
+}
+
+#resumo-itens{
+    padding: 20px;
+    background-color: #f1f4f8;
+}
+
+.item{
+    margin-bottom: 18px;
+    color: #222;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#total-item{
+    padding-top: 15px;
+}
+
+#total{
+    color: #00d994;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#total-price{
+    font-size: 14px;
+    color: #00d994;
+    font-weight: 500;
+}
+
+#quantidade{
+    margin-top: 20px;
+}
+
+#quantidade figure{
+    background-color: #f1f4f8;
+    width: 65px;
+}
+
+#quantidade img{
+    width: 60px;
+}
+
+#quant-info{
+    margin-left: 15px;
+}
+
+#b-promo{
+    font-size: 14px;
+    color: rgb(129, 129, 129);
+}
+
+#p-promo{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#quant-input{
+    margin-top: 10px;
+    background-color: #f1f4f8;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1000px) {
+    #checkout-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center!important;
+    }
+
+    #resumo, #buy-form{
+        width: 80%;
+    }
+
+    #resumo{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #brand-cards img{
+        height:18px;
+    }
+
+    #header-content{
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #logo img, #seguro img{
+        width: 40vw;
+    }
+
+    .radio-div label{
+        font-size: 13.5px;
+        margin-left: 15px;
+    }
+
+    #pay-title {
+        font-size:17px ;
+    }
+}
+
+/**/
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}

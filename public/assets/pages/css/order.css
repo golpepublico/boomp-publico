@@ -1,0 +1,82 @@
+.order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+}
+
+.order-button {
+  color: white;
+  background-color: #2323ff;
+  border-radius: 4px;
+  border: 0;
+}
+
+.order-button a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 2.5rem;
+    font-size: .9rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+}
+
+.order-button span {
+    margin-right: 6px;
+}
+
+.card-order h6 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-top: 14px;
+}
+
+.card-order p {
+    font-size: 14px;
+    color: rgb(83, 83, 83);
+}
+
+.card-order .card-order-produto {
+    display: flex;
+    align-items: center;
+}
+
+.card-order .card-order-produto img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+.card-order .card-order-produto b {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card-order-tratar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.card-order-tratar .remover {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 728px) {
+    .order-header {
+        width: unset;
+    }
+
+    .order-header h2 {
+        margin-right: 8px;
+        font-size: 20px;
+    }
+}

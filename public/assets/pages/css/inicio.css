@@ -1,0 +1,47 @@
+.welcome{
+    font-size: 1rem;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    margin: 3vw 2vw;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: relative;
+    margin-right: 1vw;
+    padding: 2vh 2vw;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+}
+.card-text{
+    color: rgb(141, 141, 141);
+    font-size: 1rem;
+}
+.card-number{
+    padding-bottom: 1vh;
+    border-bottom: rgb(211, 211, 211) solid 1px;
+}
+.shopping-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 2vw;
+    width: 61vw;
+    background-color: white;
+    height: relative;
+    margin-left: 2vw;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.25);
+}
+.abandoned{
+    font-weight: bold;
+    font-size: 1.1rem;
+}

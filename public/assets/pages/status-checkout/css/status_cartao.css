@@ -1,0 +1,151 @@
+body {
+    background-color: #F8F8F8;
+}
+
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* .progress {
+    margin-right: 15px;
+} */
+
+.colorBlue {
+    font-weight: bold;
+    color: #084AF3;
+}
+
+.justify-contentCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-flexEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+b {
+    font-weight: bold;
+    color: #000000;
+}
+
+h2 {
+    color: #303030;
+    font-size: 18px;
+}
+
+h3 {
+    color: #303030;
+}
+
+p {
+    color: #303030;
+}
+
+.widthMax {
+    max-width: 100%;
+    width: 100%;
+}
+
+.widthMax:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.widthMax:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.widthMax:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.widthMax:nth-child(4) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.widthMax:nth-child(5) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #ffff;
+    border: solid 1px #c0c0c0;
+}
+
+.divCard {
+    background-color: #ffff;
+    border: solid 1px #c0c0c0;
+    padding: 10px;
+    width: 49%;
+}
+
+#divBtnWhats {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.btnStatus {
+    background-color: #00A801;
+    color: #ffffff;
+    font-size: 15pt;
+    flex-wrap: nowrap;
+}
+
+.btnStatus:hover {
+    background-color: #006e00;
+}
+
+#card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#card1 img{
+    width: auto;
+    height: auto;
+    width: 150px;
+}
+
+@media screen and (max-width:750px) {
+    .widthMax:nth-child(4) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .divCard {
+        width: 100%;
+    }
+
+    .divCard:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    #valorCartaoStatus {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,248 @@
+
+
+#container-pedidos, #abandonados{
+    overflow-y: scroll;
+    max-height: 500px;
+    margin-top: 15px;
+    width: 99%;
+}
+
+#abandonados{
+    width: 100%;
+}
+
+#container-abandonados{
+    width: 97%;
+    border-radius:10px;
+}
+
+#container-pedidos p{
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.pedido-item{
+    width: 99%;
+    display: flex;
+}
+
+.titulo-pedido{
+    display: flex;
+    align-items: center;
+    width: 28%;
+}
+
+.info-pedido{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 72%;
+}
+
+.icon-tipo{
+    padding: 25px;
+    background-color: #e2e2e2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-tipo span, .icon-tipo i{
+    font-size: 32px;
+    color: #5c5c5c;
+}
+
+.valor-pedido{
+    margin-left: 10px;
+}
+
+.valor-status{
+    display: flex;
+}
+
+.valor-status .valor{
+    font-weight: bold;
+}
+
+.status-box{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    margin-left: 5px;
+    border-radius: 30px;
+
+}
+
+.status-box p, .status-box span{
+    font-size: 12px;
+    line-height: 0;
+}
+
+.status-box p{
+    margin-left: 5px!important;
+    font-weight: bold;
+}
+
+
+.pago{
+    background-color: #61c989;
+}
+
+.pago span{
+    color:#ace0c5 ;
+}
+
+.pago p{
+    color:white;
+}
+
+.pendente{
+    background-color: #ffd79d;
+}
+
+.pendente span{
+    color: #bc7d1f;
+}
+
+.pendente p{
+    color: #5c5c5c;
+}
+
+
+
+.valor-pedido .nome{
+    font-size: 13px;
+    margin-top: 8px!important;
+}
+
+
+
+.tipo-pedido{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.tipo-pedido span, .tipo-pedido p, .tipo-pedido i, .objeto-pedido p{
+    font-size: 14px;
+}
+
+.tipo-pedido p, .objeto-pedido p{
+    font-weight: bold;
+}
+
+.tipo-pedido p{
+    margin-left: 5px!important;
+}
+
+.objeto-pedido{
+    margin-left: 15px;
+}
+
+.data-pedido{
+    margin-left: 15px;
+}
+
+.data-pedido p{
+    font-size: 13px;
+}
+
+#abandonados table{
+     width: 100%;
+    border-collapse: collapse;
+
+}
+
+#abandonados p{
+    margin: 0;
+    padding: 0;
+    margin: 0 5px 0 5px;
+}
+
+#abandonado-dataHora{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold!important;
+    color: black!important
+}
+
+thead tr{
+    position: sticky; top: 0;
+}
+
+tr{
+    border-bottom: solid 1px #dadada!important;
+}
+
+td, th{
+    text-align: left;
+}
+
+th{
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+#abandonados .status-box{
+    width: 90px;
+    padding: 12px;
+    margin-left: 0;
+}
+
+td{
+    padding: 15px 0 15px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+
+
+
+@media only screen and (max-width: 728px) {
+    .pedido-item{
+        flex-direction: column;
+    }
+
+    .titulo-pedido{
+        width: unset;
+        flex-direction: column;
+    }
+
+    .info-pedido{
+        width: unset;
+        flex-direction: column;
+    }
+
+    .valor-pedido {
+        margin: 0;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    .info-pedido div {
+        margin: 0;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+
+    .pedido-item{
+        flex-direction: column;
+    }
+
+    .titulo-pedido{
+        flex-direction: column;
+
+    }
+
+    .info-pedido{
+
+        flex-direction: column;
+    }
+}

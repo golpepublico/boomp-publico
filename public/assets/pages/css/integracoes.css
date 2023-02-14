@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Sarabun&display=swap');
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    width: 100%;
+    padding: 25px;
+    font-family: 'Sarabun', sans-serif;
+    padding-top: 50px;
+}
+
+.containerIntegracoes {
+    background-color: #fff;
+    box-shadow: 0px 3px 5px 0px rgb(50 50 50 / 25%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.containerIntegracoes:nth-child(2) {
+    margin-top: 35px;
+}
+
+.containerIntegracoes h1 {
+    color: #414141;
+}
+
+.btnNewIntegracoes {
+    background-color: #2323FF;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.btnNewIntegracoes:hover {
+    background-color: #2323ffa6;
+}
+
+.fa-circle-xmark {
+    color: #ff0000;
+}
+
+.fa-circle-check {
+    color: #008000;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containerIntegracoes table {
+    background-color: #fff;
+    width: 100%;
+    border: none;
+}
+
+.containerIntegracoes table tr {
+    background-color: #f4f5f9;
+    color: #8b8b8b;
+}
+
+.containerIntegracoes table tr:nth-child(1) {
+    background-color: #ecedf2;
+    color: #5c5c5c;
+}
+
+.containerIntegracoes table th {
+    padding: 10px;
+    border: #ffffff solid 3px;
+}
+
+#containerSearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #414141;
+    font-weight: bold;
+}
+
+#searchConfig {
+    border-radius: 5px;
+    border: solid 1px rgb(179, 179, 179);
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.btnActions {
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.btnActions:nth-child(1) {
+    background-color: rgb(70, 70, 255);
+}
+
+.btnActions:nth-child(2) {
+    background-color: rgb(70, 255, 110);
+}
+
+.btnActions:nth-child(3) {
+    background-color: rgb(255, 70, 70);
+}
+
+.containerModalInte {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 10px;
+    padding: 25px;
+    color: #4e4e4e;
+    overflow-y:scroll;
+}
+
+#modalToken form div {
+    width: 100%;
+}
+
+#modalToken form div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#modalToken form div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    border-top: solid .5px #acacac;
+    border-bottom: solid .5px #acacac;
+}
+
+.containerColumnInte {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerBtnModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  
+}
+
+.containerBtnModal button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c5c5c5a9;
+    color: #414141;
+    margin-top: 15px;
+}
+
+.containerBtnModal button:hover {
+    background-color: #c5c5c567;
+}
+
+.containerBtnModal .btnSave {
+    background-color: #2323FF;
+    color: #fff;
+}
+
+.containerBtnModal .btnSave:hover {
+    background-color: #2323ffa6;
+}
+
+#asterisk {
+    color: red;
+}
+
+#titleModalInte {
+    color: #414141;
+    font-size: 18pt;
+}
+
+.divTitleModalInte {
+    border-bottom: solid .5px #acacac;
+    padding-bottom: 20px;
+}
+
+#descToken {
+    border: 1px solid #acacac;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.questionTitle {
+    font-weight: 700;
+}
+
+#modalToken div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#modalToken div:nth-child(1) {
+    padding-top: 0;
+}
+
+#modalToken div:nth-child(3) {
+    padding-bottom: 0;
+}
+
+.fa-xmark {
+    cursor: pointer;
+}
+
+.containerEventos {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: dashed .5px #8b8b8b;
+
+}
+
+.inputModalInte {
+    border-radius: 5px;
+    border: solid 1px rgb(179, 179, 179);
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #8b8b8b;
+}
+
+@media(max-height:850px) {
+    .containerModalInte {
+        max-height: 600px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .containerTableInt2 table th{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .containerTableInt2 .btnNewIntegracoes {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+
+#fadeInte {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#fadeInte,
+#modalToken {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modalToken.hideInte,
+#fadeInte.hideInte {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+#fadeInte2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#fadeInte2,
+#modalConfig {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modalConfig.hideInte2,
+#fadeInte2.hideInte2 {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Sarabun&display=swap');
+
+body,html {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.btnStatus {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 1s ease-in;
+}
+
+header {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 100%;
+}
+
+header img {
+    width: auto;
+    height: auto;
+    max-width: 150px;
+}
+
+.progress {
+    margin-right: 15px;
+    color: #869498;
+}
+
+.atualProgress {
+    margin-right: 0px;
+    color: #000000;
+}
+
+.module-border {
+    content: none;
+    background: linear-gradient(to right, #2b3dfd, rgb(0, 238, 255), #6238fc);
+    max-height: 5px;
+    color: transparent;
+    width: 100%;
+    justify-content: center;
+}
+
+.containerStatus {
+    display: flex;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+footer {
+    padding-bottom: 15px;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:690px) {
+    header {   
+        flex-direction: column;
+    }
+
+    .itensHeader {
+        margin-top: 20px;
+    }
+
+    #btnFechar {
+        color: #2b3dfd;
+    }
+
+    #btnFechar:hover {
+        color: #00ECFF;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .progress {
+        font-size: 10px;
+    }
+}

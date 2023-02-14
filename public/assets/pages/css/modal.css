@@ -1,0 +1,88 @@
+.modal-background {
+    background: rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    max-width: 500px;
+    width: 95%;
+    max-height: 95%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 8px;
+    font-weight: 800;
+}
+
+.modal hr {
+    height: 1px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.modal form {
+    flex: 1;
+    padding: 18px;
+}
+
+.modal form .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.modal form .form-row label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.modal form .form-row input, .modal form .form-row select {
+    outline: 0;
+    border: solid 1px #d1d1d1;
+    padding: 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.modal-submit {
+    padding: 16px;
+    background-color: #f4f6f8;
+}
+
+.modal-submit input[type="submit"] {
+    background: #fff;
+    color: #202223;
+    border: 1px solid #b2b3b4;
+    font-size: .9rem;
+    border-radius: 4px;
+    height: 2.5rem;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.modal-close {
+    cursor: pointer;
+    user-select: none;
+}
+
+.modal-fechado {
+    display: none;
+}

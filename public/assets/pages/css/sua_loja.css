@@ -1,0 +1,129 @@
+.shopify-fatura-descricao {
+    color: rgb(63, 63, 63);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.loja-destaque {
+    color:rgb(63, 63, 63);
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    color: #2323ff;
+}
+
+.loja-destaque * {
+    font-size: 16px;
+}
+
+.loja-destaque p {
+    margin-left: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.loja-logo {
+    border: 1px solid #ddd;
+    width: 280px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.recebimento-cards {
+  display: flex;
+  width: 60vw;
+}
+
+.recebimento-cards .card-container {
+    width: 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.card-recebimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-recebimento .material-icons-outlined {
+    font-size: 30px;
+}
+
+.card-recebimento h6 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.card-recebimento p {
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+}
+
+.card-recebimento-selecionado {
+    border: 3px solid rgb(35, 35, 255);
+    background-color: #2323ff24;
+}
+
+.loja-destaque-edit {
+    margin-left: 4px;
+}
+
+.loja-destaque-edit p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.loja-final {
+    margin-top: 24px;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loja-final .submit-row {
+    height: unset;
+    padding: 0;
+}
+
+.filtro-atualizar{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 24px;
+    user-select: none;
+    cursor: pointer;
+}
+  
+.filtro-atualizar p{
+    margin-left: 6px;
+}
+
+.submit-container {
+    width: 60vw;
+}
+
+@media only screen and (max-width: 728px) {
+    .cards {
+        width: unset;
+    }
+
+    .loja-final {
+        width: unset;
+    }
+
+    .filtro-atualizar {
+        margin-left: 0;
+    }
+
+    .submit-container {
+        width: unset;
+    }
+}

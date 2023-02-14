@@ -1,0 +1,199 @@
+@import "variables.css";
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(32, 42, 68);
+}
+
+section {
+    max-width: 100%;
+}
+
+.sectionNormal {
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionNormal div {
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.sectionNormal h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: start;
+    color: rgb(32, 42, 68);
+    margin-bottom: 30px;
+    line-height: 2.8rem;
+}
+
+.sectionNormal p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    text-align: start;
+    color: rgb(51, 51, 51);  
+}
+
+#section2 {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor2);
+}
+
+#section2 div {
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#section2 h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: start;
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 3.5rem;
+}
+
+#section2 p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    text-align: start;
+    color: #ffffff;
+}
+
+#seta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor1);
+    font-size: 50px;
+    padding: 20px;
+}
+
+#sectionDuvidas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #EDF1F9;
+}
+
+#sectionDuvidas .duvidas {
+  width: 40%;
+  padding: 50px;
+}
+
+.duvidas h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.duvidas h1 i {
+    margin-right: 5px;
+}
+
+#sectionCadastro {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--cor2);
+  color: #ffffff;
+}
+
+#sectionCadastro h1 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.containerCadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.btn {
+    background-color: var(--cor1);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 25px;
+    font-weight: bold;
+}
+
+.duvidas i {
+    color: var(--cor1);
+}
+
+@media (max-width: 1012px) {
+    #sectionDuvidas .duvidas {
+        width: 100%;
+        padding: 50px;
+      }
+}
+
+@media (max-width: 850px) {
+    .sectionNormal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionNormal div{
+        width: 90%;
+        max-width: 90%;
+    }
+    
+    #section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section2 div{
+        width: 90%;
+        max-width: 90%;
+     }
+
+    .classReverse {
+        flex-direction: column-reverse;
+    }
+
+    .containerCadastro {
+        width: 75%;
+    }
+
+    .containerCadastro {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .containerCadastro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerCadastro .btn {
+        margin-top: 20px;
+    }
+
+}

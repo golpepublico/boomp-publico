@@ -1,0 +1,132 @@
+/*conteudo*/
+
+.title{
+    margin-top: 2vh;
+}
+.info{
+    display: flex;
+}
+.store{
+    display: flex;
+    align-items: center;
+}
+#store-icon{
+    background-color: rgb(35, 35, 255);
+    color: white;
+    border: solid 2px rgb(35, 35, 255);
+    border-radius: 3px;
+}
+#store-text{
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 0.5vw;
+}
+.date{
+    background-color: rgb(35, 35, 255);
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 7px;
+}
+#date-icon,#date-text{
+    color: white;
+    font-weight: 100;
+}
+#date-text{
+    padding-left: 0.25vw;
+    font-size: 13px;
+    font-weight: 400;
+}
+.extensive{
+    display: flex;
+    align-items: center;
+}
+#extensive-text{
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 1vw;
+}
+.cards{
+    width: 75vw;
+    display: flex;
+}
+.card{
+    min-height: 18vh;
+    width: 15vw;
+    background-color: white;
+    margin-top: 5vh;
+    margin-right: 1vw;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 8px 2px #B5B5B5;
+    box-shadow: 0px 1px 8px 2px #B5B5B5;
+    padding-left: 20px;
+}
+.card-up{
+    color: rgb(77, 57, 255);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+
+}
+.icon-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow_upward {
+    color:green;
+}
+.arrow_downward {
+    color:red;
+}
+.card-percent{
+    font-size: 18px;
+}
+.card-down{
+    display: flex;
+    flex-direction: column;
+}
+.card-number{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 7px 0;
+}
+.card-text{
+    font-size: 15px;
+    color: rgb(189, 189, 189);
+}
+
+/*chart*/
+canvas{
+    background-color: transparent;
+    padding: 30px 0;
+}
+.canvas{
+    display: flex;
+    height: 70vh;
+    width: 65vw;
+    margin: 9vh 0;
+}
+
+@media only screen and (max-width: 728px) {
+    .cards {
+        width: unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards .card {
+        width: 100% !important;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .canvas {
+        width: 100%;
+        height: unset;
+    }
+}
