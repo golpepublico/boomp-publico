@@ -3,7 +3,7 @@
 @section('title-page', 'Marketing')
 
 @section('css')
-<!-- <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}"> -->
+<!-- <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}"> -->
 <link rel="stylesheet" href="{{ URL::to('assets/pages/css/mkt.css') }}">
 @section('content')
 <div class="contents">

@@ -9,13 +9,13 @@
     <title> @yield('title-page') </title>
 
     @include('layouts.app-head')
-    <link rel="stylesheet" href="{{ asset('pages/css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/pages/css/login.css') }}">
 </head>
 
 <div class="lado-esquerdo">
     <div class="logo">
         <a href="{{ URL::to('/') }}">
-            <img src="{{ asset('pages/img/logo-recortada.png') }}" alt="logo">
+            <img src="{{ asset('assets/pages/img/logo-recortada.png') }}" alt="logo">
         </a>
     </div>
 
@@ -33,7 +33,7 @@
 </div>
 
 <div class="lado-direito">
-    <img src="{{ asset('pages/img/login-direito.svg') }}" alt="background">
+    <img src="{{ asset('assets/pages/img/login-direito.svg') }}" alt="background">
 </div>
 
 @yield('scripts')

@@ -17,11 +17,11 @@
             <a href="#">Consumidor</a>
         </div>
         <div>
-            <img src="{{asset('landing/img/imgFooter.png')}}" alt="selos">
+            <img src="{{asset('assets/landing/img/imgFooter.png')}}" alt="selos">
         </div>
     </div>
     <div id="containerFooter2">
-        <div id="logo"><img src="{{asset('landing/img/logo.png')}}" alt="logo"></div>
+        <div id="logo"><img src="{{asset('assets/landing/img/logo.png')}}" alt="logo"></div>
         <div id="icons">
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>

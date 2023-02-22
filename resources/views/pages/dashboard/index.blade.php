@@ -3,7 +3,7 @@
 @section('title-page', 'Dashboard')
 
 @section('css')
-<!-- <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}"> -->
+<!-- <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}"> -->
 <link rel="stylesheet" href="{{ URL::to('assets/pages/css/dashboard.css') }}">
 @endsection
 

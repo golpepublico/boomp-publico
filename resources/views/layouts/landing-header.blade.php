@@ -1,5 +1,5 @@
 <header id="header">
-    <a id="logo" href="#"><img src="{{asset('landing/img/logo.png')}}" alt="logo"></a>
+    <a id="logo" href="#"><img src="{{asset('assets/landing/img/logo.png')}}" alt="logo"></a>
     <nav id="nav">
         <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
             <span id="hamburger"></span>

@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <!--Links-->
-    <script src="https://kit.fontawesome.com/aff34075b0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('landing/css/swiper-bundle.min.css')}}">
-    <link rel="stylesheet" href="{{asset('landing/css/styleSlider.css')}}">
-    <link rel="stylesheet" href="{{asset('landing/css/reset.css')}}">
-    <link rel="stylesheet" href="{{asset('landing/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('landing/css/index.css')}}">
+    <script src="https://kit.fontawesome.com/9aa4c0757e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="{{asset('assets/landing/css/swiper-bundle.min.css')}}"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="{{asset('assets/landing/css/styleSlider.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/landing/css/reset.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/landing/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/landing/css/index.css')}}">
 
 
 </head>
@@ -26,13 +28,13 @@
                 <h1>Para o seu negócio realizar mais vendas!</h1>
                 <p>Tudo em um só lugar. Ganhe agilidade, suporte e tecnologia para escalar. Aqui na Boomp focamos em Growth.</p>
             </div>
-            <div class="divImg"><img src="{{asset('landing/img/img1.webp')}}" alt="imagem" style="max-height: 100%; width: auto;" id="img1Dis"></div>
+            <div class="divImg"><img src="{{asset('assets/landing/img/img1.webp')}}" alt="imagem" style="max-height: 100%; width: auto;" id="img1Dis"></div>
         </section>
 
         <div id="seta"><i class="fa-solid fa-angles-down"></i></div>
 
         <section class="sectionNormal classReverse">
-            <div class="divImg"><img src="{{asset('landing/img/img2.webp')}}" alt="imagem" style="max-width: 100%; height: auto;"></div>
+            <div class="divImg"><img src="{{asset('assets/landing/img/img2.webp')}}" alt="imagem" style="max-width: 100%; height: auto;"></div>
             <div>
                 <h1>Checkout com aprovação máxima</h1>
                 <p>Solução completa em meios de pagamento para o seu e-commerce com uma taxa de aprovação de 97%.</p>
@@ -41,7 +43,7 @@
         </section>
 
         <section class="sectionNormal classReverse">
-            <div class="divImg"><img src="{{asset('landing/img/img4.webp')}}" alt="imagem" style="max-width: 100%; height: auto;">
+            <div class="divImg"><img src="{{asset('assets/landing/img/img4.webp')}}" alt="imagem" style="max-width: 100%; height: auto;">
                 <p style="background-color: #0029F2; width: 100%; text-align: center; color: #fff; padding-top: 15px; padding-bottom: 15px;"><a href="#" style="color: #fff;">Conheça nossos preços<i class="fa-solid fa-arrow-up" style="margin-left: 10px;"></i></a></p>
             </div>
             <div>
@@ -99,9 +101,10 @@
 
         @include('layouts.landing-footer')
     </main>
-    <script src="{{asset('landing/js/script.js')}}"></script>
-    <script src="{{asset('landing/js/swiper-bundle.min.js')}}"></script>
-    <script src="{{asset('landing/js/scriptSlider.js')}}"></script>
+    <script src="{{asset('assets/landing/js/script.js')}}"></script>
+    <!-- <script src="{{asset('assets/landing/js/swiper-bundle.min.js')}}"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{{asset('assets/landing/js/scriptSlider.js')}}"></script>
 </body>
 
 </html>

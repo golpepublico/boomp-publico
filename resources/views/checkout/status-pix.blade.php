@@ -8,7 +8,7 @@
     <title>Status-pix</title>
     <link rel="stylesheet" href="{{ URL::to('assets/pages/status-checkout/css/status.css') }}">
     <link rel="stylesheet" href="{{ URL::to('assets/pages/status-checkout/css/status_pix.css') }}">
-    <script src="https://kit.fontawesome.com/aff34075b0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9aa4c0757e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
