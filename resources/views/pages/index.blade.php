@@ -153,19 +153,20 @@
                 
                 ?>
 
-                @foreach ($objectFaq as $elem)
-                    <div class="containerFaq__item">
-                        <div class="containerFaq__title">
-                            <h2>{{ $elem['title'] }}</h2>
-                            <img src="{{ asset('assets/landing/img/global/simple-arrow.svg') }}" alt="simple arrow">
+                @foreach ($solutionListData as $item)
+                    <div class="solutionItem">
+                        <h2>{{ $item['title'] }}</h2>
+                        <p>{{ $item['paragraph'] }}</p>
+
+                        <div class="solutioImages">
+                            @foreach ($item['images'] as $image)
+                                <img src="{{ asset('assets/landing/img/solutions/' . $image) }}" alt="logo image">
+                            @endforeach
+
                         </div>
-                        <div
-                            class="containerFaq__text {{ $elem['title'] == 'Qual plano escolher?' ? 'textWhite' : 'containerFaq__text_0' }}">
-                            <p>{{ $elem['text'] }}</p>
-                        </div>
+
                     </div>
                 @endforeach
-              
             </div>
         </div>
 
