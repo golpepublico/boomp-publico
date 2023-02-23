@@ -24,6 +24,9 @@ menuOpitions.forEach((elem, index) => {
         switch (index) {
             case 3:
                 otherContainers.forEach((c) =>
+                    c.classList.remove("sub-category-open-two")
+                );
+                otherContainers.forEach((c) =>
                     c.classList.remove("sub-category-open-tree")
                 );
                 otherContainers.forEach((c) =>
