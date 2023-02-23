@@ -10,6 +10,9 @@ Route::get('/', function () {
 //     return view('plans.index');
 // });
 
+
+Route::get('/planos', 'PlansController@index')->name('plans.index');
+
 //rota para checkout com slug da loja e produto
 Route::group(['prefix' => 'checkout'], function () {
     Route::get("/status/{idpay}", "CheckoutController@status")->name('checkout.status');

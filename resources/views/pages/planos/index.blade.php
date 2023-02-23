@@ -33,7 +33,7 @@
 
         <div class="containerHeader">
             <ul>
-                <li><a href="{{ route('planos.index') }}">Planos</a></li>
+                <li><a href="">Planos</a></li>
                 <li><a href="{{ route('dashboard.index') }}">Acessar Dashboard</a></li>
                 <li class="liIdioma" id="hamburger-button3"><img
                         src="{{ asset('assets/landing/img/global/brazil-flag-icon.050724f.webp') }}" alt="bandeira"
@@ -99,7 +99,7 @@
 
                 <ul>
                     <li>
-                        <img src="../assets/global/check-icon.svg" alt="check" />
+                        <img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check" />
 
                         <div class="title">
                             <h2>Links de pagamento</h2>
@@ -107,14 +107,14 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../assets/global/check-icon.svg" alt="check" />
+                        <img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check" />
                         <div class="title">
                             <h2>Assinatura inteligente</h2>
                             <p>Aumente taxa de conversão em 53%</p>
                         </div>
                     </li>
                     <li>
-                        <img src="../assets/global/check-icon.svg" alt="check" />
+                        <img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check" />
 
                         <div class="title">
                             <h2>Subcontas ilimitadas</h2>
@@ -122,7 +122,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../assets/global/check-icon.svg" alt="check" />
+                        <img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check" />
 
                         <div class="title">
                             <h2>Splits de pagamento</h2>
@@ -136,7 +136,7 @@
                 <div class="containerPlans__plans-item">
                     <div class="containerPlans__plans-item-info">
                         <div class="containerPlans__plans-item-info-title">
-                            <img src="../assets/plans/basic-plan.svg" alt="basico plano" />
+                            <img src="{{ asset('assets/landing/img/plans/basic-plan.svg') }}" alt="basico plano" />
                             <div class="containerPlans__plans-item-title-info">
                                 <span class="badged">Menor taxa do mercado</span>
                                 <p>Para autônomos</p>
@@ -213,15 +213,17 @@
                     </ul>
 
                     <button class="buttonGeneric__nobg">
-                        Criar conta gratuita
-                        <img src="../assets/svg/arrow-main-color.svg" alt="seta direita" />
+                        <a href="{{ route('register') }}">Criar conta gratuita
+                            <img src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}"
+                                alt="seta direita" />
+                        </a>
                     </button>
                 </div>
 
                 <div class="containerPlans__plans-item popular">
                     <div class="containerPlans__plans-item-info">
                         <div class="containerPlans__plans-item-info-title">
-                            <img src="../assets/plans/pro-plan.svg" alt="basico plano" />
+                            <img src="{{ asset('assets/landing/img/plans/pro-plan.svg') }}" alt="pro plano" />
                             <div class="containerPlans__plans-item-title-info">
                                 <span class="badged badgedPt">Mais popular</span>
                                 <p>Para startups</p>
@@ -290,8 +292,10 @@
                     </ul>
 
                     <button class="buttonGeneric__nobg">
-                        Testar agora
-                        <img src="../assets/svg/arrow-main-color.svg" alt="seta direita" />
+                        <a href="{{ route('register') }}">Testar agora
+                            <img src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}"
+                                alt="seta direita" />
+                        </a>
                     </button>
                 </div>
             </div>
@@ -315,8 +319,66 @@
         <div class="containerFaq">
             <h2>Perguntas Frequentes</h2>
 
+            <?php
+            $objectFaq = [
+                [
+                    'title' => 'Como criar minha conta?',
+                    'text' => 'Crie sua conta na Boomp em 10 minutos. Escolha o plano que se encaixa melhor para você, complete seu cadastro com suas informações de pessoa física ou jurídica e os seus dados bancários. A partir daí você já pode começar a usar a Boomp para alavancar suas vendas.',
+                ],
+                [
+                    'title' => 'O que posso fazer com Boomp',
+                    'text' => 'A Boomp é uma plataforma de pagamentos com soluções para empresas e consumidores. Aqui na Boomp, você consegue fazer split de pagamentos, oferecer planos mensais ou anuais para seus clientes com a nossa opção de pagamento recorrente, integrar com diversas plataformas de sistema de gerenciamento e vendas online e transferências internacionais.',
+                ],
+                [
+                    'title' => 'Como vou receber o valor das minhas vendas?',
+                    'text' => 'Você vai receber o seu pagamento na conta bancária cadastrada no nosso sistema no prazo determinado do plano escolhido.',
+                ],
+                [
+                    'title' => 'Qual plano escolher?',
+                    'text' => 'Na Boomp, você pode escolher um dos seguintes planos sem pagar nada para ter sua conta: Se você é autônomo, escolha o plano básico. Ele tem a menor taxa do mercado e te permite receber via Pix, cartão (parcelado ou à vista) ou boleto. Consulte as taxas da operação aqui. Se você tem uma startup, escolha o plano profissional. Receba em até um dia útil pelo Pix, em 30 dias para pagamentos em cartão e no mesmo dia do pagamento via boleto. Se você cria para a internet como infoprodutor, escolha o plano Creators e receba em 1 dia pelo Pix, em até 15 dias via cartão e no mesmo dia pelo boleto bancário.',
+                ],
+            ];
+            
+            ?>
+
             <div id="faq" class="containerFaq__list">
+                @foreach ($objectFaq as $elem)
+                    <div class="containerFaq__item">
+                        <div class="containerFaq__title">
+                            <h2>{{ $elem['title'] }}</h2>
+                            <img class="arrow" src="{{ asset('assets/landing/img/global/simple-arrow.svg') }}"
+                                alt="Arrow">
+                        </div>
+                        <div
+                            class="containerFaq__text_0 containerFaq__text {{ $elem['title'] == 'Qual plano escolher?' && ' textWhite' }}">
+                            <p>{{ $elem['text'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
             </div>
+
+            <script>
+                const faqItems = document.querySelectorAll('.containerFaq__item');
+
+                faqItems.forEach((item) => {
+                    const title = item.querySelector('.containerFaq__title');
+                    const text = item.querySelector('.containerFaq__text');
+
+                    title.addEventListener('click', () => {
+                        text.classList.remove('containerFaq__text_0');
+                        title.querySelector('.arrow').classList.toggle('openImg');
+
+
+
+                        if (title.firstElementChild.innerText == 'Qual plano escolher?') {
+                            text.classList.toggle('textWhiteOpen');
+                        } else {
+                            text.classList.toggle('open')
+                        }
+                    });
+                });
+            </script>
+
         </div>
 
     </div>

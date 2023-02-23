@@ -30,7 +30,7 @@
 
         <div class="containerHeader">
             <ul>
-                <li><a href="{{ route('planos') }}">Planos</a></li>
+                <li><a href="{{ route('plans.index') }}">Planos</a></li>
                 <li><a href="{{ route('dashboard.index') }}">Acessar Dashboard</a></li>
                 <li class="liIdioma" id="hamburger-button3"><img
                         src="{{ asset('assets/landing/img/global/brazil-flag-icon.050724f.webp') }}" alt="bandeira"
@@ -55,8 +55,8 @@
         <div class="containerHeader__mobile mobileHeader">
 
             <ul id="menu" class="hiddenMenu">
-                <li><a href="./src/pages/planos.html">Planos</a></li>
-                <li><a href="#">Acessar Dashboard</a></li>
+                <li><a href="{{ route('plans.index') }}">Planos</a></li>
+                <li><a href="{{ route('dashboard.index') }}">Acessar Dashboard</a></li>
             </ul>
         </div>
 
@@ -153,20 +153,19 @@
                 
                 ?>
 
-                @foreach ($solutionListData as $item)
-                    <div class="solutionItem">
-                        <h2>{{ $item['title'] }}</h2>
-                        <p>{{ $item['paragraph'] }}</p>
-
-                        <div class="solutioImages">
-                            @foreach ($item['images'] as $image)
-                                <img src="{{ asset('assets/landing/img/solutions/' . $image) }}" alt="logo image">
-                            @endforeach
-
+                @foreach ($objectFaq as $elem)
+                    <div class="containerFaq__item">
+                        <div class="containerFaq__title">
+                            <h2>{{ $elem['title'] }}</h2>
+                            <img src="{{ asset('assets/landing/img/global/simple-arrow.svg') }}" alt="simple arrow">
                         </div>
-
+                        <div
+                            class="containerFaq__text {{ $elem['title'] == 'Qual plano escolher?' ? 'textWhite' : 'containerFaq__text_0' }}">
+                            <p>{{ $elem['text'] }}</p>
+                        </div>
                     </div>
                 @endforeach
+              
             </div>
         </div>
 
