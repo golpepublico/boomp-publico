@@ -80,7 +80,7 @@
 
         <div class="containerPlansBuy">
             <div class="containerPlansBuy__title">
-                <h2>Pagamentos</h2>
+                <h2>Planos</h2>
 
                 <ul>
                     <li>
