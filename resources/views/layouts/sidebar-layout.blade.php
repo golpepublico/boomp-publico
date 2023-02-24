@@ -20,13 +20,19 @@
         <div class="sub-category sub-category-5">
             <a href="{{ route('produtos.create') }}">Cadastrar Produto</a>
             <a href="#">Order Bumps</a>
+            <a href="#">Upsell</a> 
         </div>
         <div class="item-nav"><span class="material-icons-outlined" id="icon-menu">receipt_long</span><a class="item-nav-text" href="{{ route('pedidos.index') }}">Pedidos <img src="{{ URL::to('assets/pages/img/simple-arrow.svg') }}" alt=""></a></div>
         <div class="sub-category sub-category-6">
             <a href="{{ route('pedidos.index') }}">Pedidos</a>
             <a href="{{ route('pedidos.precart') }}">Carrinhos abandonados</a>
         </div>
-        <div class="item-nav"><span class="material-icons-outlined" id="icon-menu">campaign</span><a class="item-nav-text" href="{{ route('pixel.index') }}">Marketing</a></div>
+        <div class="item-nav"><span class="material-icons-outlined" id="icon-menu">campaign</span><a class="item-nav-text" href="{{ route('pixel.index') }}">Marketing <img src="{{ URL::to('assets/pages/img/simple-arrow.svg') }}" alt=""></a></div>
+        <div class="sub-category sub-category-7">
+            <a href="#">Pixel</a>
+            <a href="#">SMS</a>
+            <a href="#">Email</a>
+        </div>
         <div class="item-nav"><span class="material-icons-outlined" id="icon-menu">trending_up</span><a class="item-nav-text" href="{{ route('growth_cov.index') }}">Growth</a></div>
         <div class="item-nav"><span class="material-icons-outlined" id="icon-menu">settings_input_component</span><a class="item-nav-text" href="{{ route('integrations.index') }}">Integrações</a></div>
 

@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="noPadding">
         <img src="{{ asset('assets/pages/img/logo_extendido.png') }}" alt="Logo BComp" />
 
         <div class="containerHeader">
@@ -58,8 +58,8 @@
         <div class="containerHeader__mobile mobileHeader">
 
             <ul id="menu" class="hiddenMenu">
-                <li><a href="./src/pages/planos.html">Planos</a></li>
-                <li><a href="#">Acessar Dashboard</a></li>
+                <li><a href="">Planos</a></li>
+                <li><a href="{{ route('dashboard.index') }}">Acessar Dashboard</a></li>
             </ul>
         </div>
 
@@ -77,21 +77,6 @@
     </header>
 
     <div class="pageWapper">
-        <div class="containerPaymentSolution">
-            <div class="containerGeneric">
-                <div class="containerGenericInfo">
-                    <div class="containerGenericTitle">
-                        <h2>
-                            As melhores taxas do mercado, simplificadas e transparentes
-                        </h2>
-                        <p>
-                            The payment solution for the biggest shopping sites with free
-                            billing control.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="containerPlansBuy">
             <div class="containerPlansBuy__title">
@@ -144,7 +129,7 @@
                             </div>
                         </div>
 
-                        <h3>R$ 0,00 <span>por mês</span></h3>
+                    
                     </div>
 
                     <ul class="containerPlans__plans-list">
@@ -231,7 +216,7 @@
                             </div>
                         </div>
 
-                        <h3>R$ 0,00 <span>por mês</span></h3>
+                     
                     </div>
 
                     <ul class="containerPlans__plans-list">
@@ -393,16 +378,17 @@
             <div class="info">
                 <div class="info_item1">
                     <div class="info_item1__title">
-                        <p>Correspondente de câmbio autorizado</p>
-                        <img src="{{ asset('assets/landing/img/footer/white-bexs-logo.svg') }}" alt="bexs">
+
+
                     </div>
 
                     <div class="info_item1__list">
-                        <p>Tecnologia</p>
+                        <p>Tecnologia de ponta a ponta</p>
 
                         <div class="info_item1__list__itens">
-                            <img class="react" src="{{ asset('assets/landing/img/footer/white-midas-logo.png') }}"
+                            <img src="{{ asset('assets/landing/img/footer/umbler-logo-bg-primary.svg') }}"
                                 alt="logo">
+
                             <img src="{{ asset('assets/landing/img/footer/white-stanfordrebuild-logo.png') }}"
                                 alt="logo">
                         </div>
@@ -414,7 +400,6 @@
                         <li><a href="#">Soluções</a></li>
                         <li><a href="#">Link de pagamento</a></li>
                         <li><a href="#">Pagamento por assinaturas</a></li>
-                        <li><a href="#">Remessa internacional</a></li>
                         <li><a href="#">Split de pagamentos</a></li>
                         <li><a href="#">API para integração</a></li>
                     </ul>
@@ -422,9 +407,8 @@
                         <li><a href="#">Empresa</a></li>
                         <li><a href="#">Preços</a></li>
                         <li><a href="#">Suporte</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Carreiras</a></li>
                         <li><a href="#">Termos e privacidade</a></li>
+                        <li><a href="#">PLDT</a></li>
                     </ul>
                 </div>
             </div>

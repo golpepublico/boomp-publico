@@ -57,7 +57,7 @@ menuOpitions.forEach((elem, index) => {
                 otherContainers.forEach((c) =>
                     c.classList.remove("sub-category-open-four")
                 );
-                container.classList.toggle("sub-category-open-two");
+                container.classList.toggle("sub-category-open-three");
                 otherElements.forEach((el) => el.classList.remove("active"));
                 elem.classList.toggle("active");
                 break;
@@ -75,6 +75,20 @@ menuOpitions.forEach((elem, index) => {
                 otherElements.forEach((el) => el.classList.remove("active"));
                 elem.classList.toggle("active");
                 break;
+            case 7:
+                    otherContainers.forEach((c) =>
+                        c.classList.remove("sub-category-open-two")
+                    );
+                    otherContainers.forEach((c) =>
+                        c.classList.remove("sub-category-open-three")
+                    );
+                    otherContainers.forEach((c) =>
+                        c.classList.remove("sub-category-open-four")
+                    );
+                    container.classList.toggle("sub-category-open-three");
+                    otherElements.forEach((el) => el.classList.remove("active"));
+                    elem.classList.toggle("active");
+                    break;
             default:
                 window.location.href = elem.children[1].href;
                 break;

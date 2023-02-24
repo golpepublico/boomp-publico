@@ -157,14 +157,6 @@
                     <div class="solutionItem">
                         <h2>{{ $item['title'] }}</h2>
                         <p>{{ $item['paragraph'] }}</p>
-
-                        <div class="solutioImages">
-                            @foreach ($item['images'] as $image)
-                                <img src="{{ asset('assets/landing/img/solutions/' . $image) }}" alt="logo image">
-                            @endforeach
-
-                        </div>
-
                     </div>
                 @endforeach
             </div>
@@ -384,29 +376,6 @@
             </div>
         </div>
 
-        <div class="containerGeneric">
-            <div class="containerGenericImage">
-                <img src="{{ asset('assets/landing/img/home/international-transfer.png') }}" alt="">
-            </div>
-
-            <div class="containerGenericInfo containerGenericInfoWidth40">
-                <div class="containerGenericTitle containerTitleNoMargin">
-                    <h2>Transferências internacionais sem burocracia</h2>
-                    <p>Receba de investimentos para a sua startup a transfrências do AdSense e Twitch</p>
-
-                    <ul>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check">
-                            Simples, justo, rápido e seguro</li>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check"> 1.99%,
-                            a melhor taxa e sem burocracia</li>
-                    </ul>
-                </div>
-
-                <button class="buttonGeneric__nobg">Simule e economize <img
-                        src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}"
-                        alt="seta para direita" /></button>
-            </div>
-        </div>
 
         <div class="containerGeneric">
             <div class="containerGenericInfo containerGenericInfoWidth40">
@@ -442,8 +411,6 @@
             <div class="containerGenericInfo">
                 <div class="containerGenericTitle containerTitleNoMargin">
                     <h2>Comece hoje mesmo sem taxinhas escondidas</h2>
-                    <p>Faça como milhares de empreendedores e lojistas!</p>
-                    <img src="{{ asset('assets/landing/img/home/users.png') }}" alt="users">
                 </div>
             </div>
 
@@ -460,16 +427,17 @@
             <div class="info">
                 <div class="info_item1">
                     <div class="info_item1__title">
-                        <p>Correspondente de câmbio autorizado</p>
-                        <img src="{{ asset('assets/landing/img/footer/white-bexs-logo.svg') }}" alt="bexs">
+
+
                     </div>
 
                     <div class="info_item1__list">
-                        <p>Tecnologia</p>
+                        <p>Tecnologia de ponta a ponta</p>
 
                         <div class="info_item1__list__itens">
-                            <img class="react" src="{{ asset('assets/landing/img/footer/white-midas-logo.png') }}"
+                            <img src="{{ asset('assets/landing/img/footer/umbler-logo-bg-primary.svg') }}"
                                 alt="logo">
+
                             <img src="{{ asset('assets/landing/img/footer/white-stanfordrebuild-logo.png') }}"
                                 alt="logo">
                         </div>
@@ -481,7 +449,6 @@
                         <li><a href="#">Soluções</a></li>
                         <li><a href="#">Link de pagamento</a></li>
                         <li><a href="#">Pagamento por assinaturas</a></li>
-                        <li><a href="#">Remessa internacional</a></li>
                         <li><a href="#">Split de pagamentos</a></li>
                         <li><a href="#">API para integração</a></li>
                     </ul>
@@ -489,9 +456,8 @@
                         <li><a href="#">Empresa</a></li>
                         <li><a href="#">Preços</a></li>
                         <li><a href="#">Suporte</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Carreiras</a></li>
                         <li><a href="#">Termos e privacidade</a></li>
+                        <li><a href="#">PLDT</a></li>
                     </ul>
                 </div>
             </div>
@@ -515,12 +481,6 @@
     </footer>
 
     <script type="module" src="{{asset('assets/landing/js/script.js')}}"></script>
-    <!--
-        <script src="{{ asset('assets/landing/js/swiper-bundle.min.js') }}"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="{{ asset('assets/landing/js/scriptSlider.js') }}"></script>
-    -->
-
 </body>
 
 </html>
