@@ -378,8 +378,7 @@
             <div class="info">
                 <div class="info_item1">
                     <div class="info_item1__title">
-
-
+                        <p>Feito com muito amor</p>
                     </div>
 
                     <div class="info_item1__list">
@@ -409,6 +408,7 @@
                         <li><a href="#">Suporte</a></li>
                         <li><a href="#">Termos e privacidade</a></li>
                         <li><a href="#">PLDT</a></li>
+                        <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -430,7 +430,7 @@
             </div>
         </div>
     </footer>
-
+    
     <script type="module" src="{{asset('assets/landing/js/scriptsPlans.js')}}"></script>
 </body>
 
