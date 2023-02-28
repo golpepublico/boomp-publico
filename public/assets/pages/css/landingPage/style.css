@@ -124,6 +124,7 @@
 .containerGenericImage > img {
   min-width: 502px;
   min-height: 397px;
+  border-radius: 1rem;
 }
 
 @media (max-width: 1250px) {

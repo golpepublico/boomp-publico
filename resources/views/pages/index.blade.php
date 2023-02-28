@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <img src="{{ asset('assets/pages/img/logo_extendido.png') }}" alt="Logo BComp" />
+        <a href="/"><img src="{{ asset('assets/pages/img/logo_extendido.png') }}" alt="Logo BComp" /></a>
 
         <div class="containerHeader">
             <ul>
@@ -266,7 +266,7 @@
                         <p>Não cobramos taxas mensais para você começar sem gastar nada</p>
                 </div>
 
-                <h2>R$0,00 <span>por mês</span></h2>
+                <h2>R$0,00</h2>
 
                 <button class="buttonGeneric">Ver planos</button>
             </div>
@@ -276,7 +276,7 @@
             <div class="containerGenericInfo">
                 <div class="containerGenericTitle">
                     <h2>Métodos de pagamentos</h2>
-                    <p>A Primefy oferece os principais meios de pagamento para que você aumente suas vendas</p>
+                    <p>A BOOMP oferece os principais meios de pagamento para que você aumente suas vendas</p>
 
                     <ul>
                         <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check"> Pix,
@@ -301,13 +301,11 @@
             <div class="containerGenericTitle">
                 <h2>Integre com sua plataforma de e-commerce</h2>
 
-                <p>A Primefy oferece os principais meios de pagamento para que você aumente suas vendas</p>
+                <p>A BOOMP oferece integração gratuita com outras plataformas parceiras para facilitar seu negócio</p>
 
                 <ul>
-                    <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check"> Pix,
-                        Boleto Bancário ou Cartão de Crédito</li>
-                    <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check"> Vendas em
-                        até 12 parcelas, independente do método de pagamento</li>
+                    <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check">Utilize
+                        nosso checkout ou integre com a sua melhor escolha</li>
                 </ul>
 
                 <a href="{{ route('register') }}"><button class="buttonGeneric__nobg">Criar conta <img
@@ -325,7 +323,7 @@
 
         <div class="containerGeneric containerFinancialAutomation">
             <div class="containerGenericImage">
-                <img src="{{ asset('assets/landing/img/home/automatic-financial.svg') }}" alt="automatic financial">
+                <img src="{{ asset('assets/landing/img/home/automatic-financial.png') }}" alt="automatic financial">
             </div>
 
             <div class="containerGenericInfo containerGenericInfoWidth40">
@@ -420,15 +418,16 @@
 
     <footer>
         <div class="containerFooter">
+            <div class="info_item1__title" style="margin-bottom: 20px">
+                <p>Feito com muito amor</p>
+            </div>
             <div class="logo">
+
                 <img src="{{ asset('assets/landing/img/footer/logo-extendida-branco.png') }}" alt="logo">
             </div>
 
             <div class="info">
                 <div class="info_item1">
-                    <div class="info_item1__title">
-                        <p>Feito com muito amor</p>
-                    </div>
 
                     <div class="info_item1__list">
                         <p>Tecnologia de ponta a ponta</p>

@@ -9,7 +9,7 @@ header {
   padding-bottom: 120px;
 }
 
-header > img {
+header > a > img {
   width: 140px;
 }
 

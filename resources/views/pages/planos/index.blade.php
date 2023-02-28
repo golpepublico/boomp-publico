@@ -29,7 +29,7 @@
 
 <body>
     <header class="noPadding">
-        <img src="{{ asset('assets/pages/img/logo_extendido.png') }}" alt="Logo BComp" />
+        <a href="/"><img src="{{ asset('assets/pages/img/logo_extendido.png') }}" alt="Logo BComp" /></a>
 
         <div class="containerHeader">
             <ul>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
 
-                    
+
                     </div>
 
                     <ul class="containerPlans__plans-list">
@@ -216,7 +216,7 @@
                             </div>
                         </div>
 
-                     
+
                     </div>
 
                     <ul class="containerPlans__plans-list">
@@ -232,7 +232,7 @@
                         <li>
                             <div>
                                 <p>Cartão</p>
-                                <span>Receba em 30 dias</span>
+                                <span>Receba em 14 dias</span>
                             </div>
                             <div class="carditem">
                                 <div>
@@ -371,15 +371,16 @@
 
     <footer>
         <div class="containerFooter">
+            <div class="info_item1__title" style="margin-bottom: 20px">
+                <p>Feito com muito amor</p>
+            </div>
             <div class="logo">
+
                 <img src="{{ asset('assets/landing/img/footer/logo-extendida-branco.png') }}" alt="logo">
             </div>
 
             <div class="info">
                 <div class="info_item1">
-                    <div class="info_item1__title">
-                        <p>Feito com muito amor</p>
-                    </div>
 
                     <div class="info_item1__list">
                         <p>Tecnologia de ponta a ponta</p>
@@ -430,7 +431,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script type="module" src="{{asset('assets/landing/js/scriptsPlans.js')}}"></script>
 </body>
 
