@@ -100,9 +100,9 @@
                 </div>
 
                 <div class="containerImage">
-                    <img src="{{ asset('assets/landing/img/svg/checkout.svg') }}" alt="checkout" />
 
-                    <img src="{{ asset('assets/landing/img/svg/dashboard.svg') }}" alt="dashbord" />
+
+                    <img src="{{ asset('assets/landing/img/home/automatic-financial.png') }}" alt="dashbord" />
                 </div>
             </div>
 
@@ -197,7 +197,6 @@
         </div>
 
         <div class="containerGeneric containerSmartSignature">
-            <img src="{{ asset('assets/landing/img/home/smart-subscription.png') }}" alt="pessoa no noot" />
             <div class="containerGenericInfo">
                 <div class="containerGenericTitle">
                     <h2>Assinatura inteligente</h2>
@@ -222,6 +221,8 @@
                     <img src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}" alt="seta para direita" />
                 </button>
             </div>
+
+            <img src="{{ asset('assets/landing/img/home/smart-subscription.png') }}" alt="pessoa no noot" />
         </div>
 
         <div class="containerGeneric containerPlans">
@@ -322,10 +323,6 @@
         </div>
 
         <div class="containerGeneric containerFinancialAutomation">
-            <div class="containerGenericImage">
-                <img src="{{ asset('assets/landing/img/home/automatic-financial.png') }}" alt="automatic financial">
-            </div>
-
             <div class="containerGenericInfo containerGenericInfoWidth40">
                 <div class="containerGenericTitle containerTitleNoMargin">
                     <h2>Automatização financeira</h2>
@@ -345,6 +342,10 @@
                 <a href="{{ route('login') }}"><button class="buttonGeneric__nobg">Acesse e veja você mesmo <img
                             src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}"
                             alt="seta para direita" /></button></a>
+            </div>
+
+            <div class="containerGenericImage">
+                <img src="{{ asset('assets/pages/img/team-huddle.jpg') }}" alt="automatic financial">
             </div>
         </div>
 
@@ -455,7 +456,6 @@
                         <li><a href="#">Preços</a></li>
                         <li><a href="#">Suporte</a></li>
                         <li><a href="#">Termos e privacidade</a></li>
-                        <li><a href="#">PLDT</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>

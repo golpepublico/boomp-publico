@@ -126,7 +126,9 @@ footer {
 
   .containerFooter > .footer > .footer__title {
     width: 100%;
-    text-align: center;
+    font-size: 10px;
+    text-align: justify;
+  text-justify: inter-word;
   }
 
   .containerFooter > .footer > .footer__list {

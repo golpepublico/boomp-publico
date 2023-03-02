@@ -196,18 +196,15 @@
 }
 
 .containerImage {
-  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
   position: relative;
 }
 
 .containerImage > img:first-child {
-  border-radius: 35px;
-  box-shadow: rgb(0 0 0 / 7%) 0px 20px 19px inset;
-  position: absolute;
-  top: 20%;
-  left: 1px;
-  height: 380px;
-  z-index: 1;
+  width: 100%;
 }
 
 .containerImage > img:nth-child(2) {
@@ -215,22 +212,14 @@
 }
 
 @media (max-width: 1250px) {
-  .containerImage > img:first-child {
-    top: 0%;
-    position: relative;
-    left: 30%;
-    min-height: 380px;
-    min-width: 190px;
-  }
 
-  .containerImage > img:nth-child(2) {
-    display: none;
-  }
+
 }
 
 @media (max-width: 1024px) {
   .containerImage {
-    display: none;
+    width: 95%;
+    margin-top: 40px;
   }
 
   .pageWapper > .containerPaymentSolution > .containerGenericInfo {
@@ -377,7 +366,8 @@
 
 /* container Payment Links */
 .containerSmartSignature {
-  margin-top: 120px;
+  pargin-top: 80px;
+  padding-bottom: 80px;
 }
 
 .containerSmartSignature > img {
@@ -390,7 +380,7 @@
 }
 
 .containerSmartSignature > .containerGenericInfo > .containerGenericTitle > p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1024px) {

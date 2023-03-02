@@ -408,7 +408,6 @@
                         <li><a href="#">Preços</a></li>
                         <li><a href="#">Suporte</a></li>
                         <li><a href="#">Termos e privacidade</a></li>
-                        <li><a href="#">PLDT</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>

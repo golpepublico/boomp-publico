@@ -26,7 +26,7 @@
     <i class="fa-sharp fa-solid fa-cart-shopping"></i>
     <div>
         <p>VOCÊ ESTÁ ADQUIRINDO:</p>
-        <p>{{ $product->name }}</p>
+        <p class="productName">{{ $product->name }}</p>
     </div>
 </div>
 
@@ -45,11 +45,6 @@
     @include('pages.checkout-new._formcustomer')
     @include('pages.checkout-new._form')
 
-    <section class="sectionForm" id="final">
-        <button type="submit" id="btnSubmit" onclick="openLoad()" style="font-size: 20px;">Finalizar Compra</button>
-        <p><i class="fa-solid fa-eye" style="color: #218838;"></i> Outras <span id="pessoas">45</span> pessoas estão finalizando a compra nesse momento.</p>
-        <img src="{{ URL::to('assets/pages/img/img-checkout/compra-segura.png') }}" alt="Compra Segura">
-    </section>
 </form>
 @endsection
 
