@@ -203,6 +203,8 @@ input:focus, select:focus {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 #aprovacao {
@@ -234,7 +236,7 @@ input:focus, select:focus {
     padding: 15px;
     border-radius: 10px;
     border: solid 2px #8a8a8a;
-    width: 50%;
+    width: calc((100% - 20px)/ 2);
     cursor: pointer;
     text-align: left;
     align-items: center;
@@ -286,6 +288,7 @@ input:focus, select:focus {
 #imgProduto img {
     width: 100%;
     height: auto;
+    aspect-ratio: 1/0.39;
     box-sizing: border-box;
 }
 
@@ -492,9 +495,6 @@ input:focus, select:focus {
         width: 100%;
     }
 
-    #banner > img{
-        aspect-ratio: 1/.2;
-    }
 }
 
 @media (min-width: 1024px) {
