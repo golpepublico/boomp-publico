@@ -109,6 +109,7 @@ input:focus, select:focus {
     padding-left: 50px;
     padding-right: 15px;
     border-radius: 20px;
+    font-size: 14px;
 }
 
 .sectionForm {
@@ -148,6 +149,7 @@ input:focus, select:focus {
 
 .genericIcon{
     width: 40px;
+    max-height: 46px;
     background-color: #eee;
     padding: 10px 11px;
     border: 1px solid #BBBBBB;
@@ -488,6 +490,10 @@ input:focus, select:focus {
 
     .btnPag {
         width: 100%;
+    }
+
+    #banner > img{
+        aspect-ratio: 1/.2;
     }
 }
 
