@@ -18,6 +18,7 @@
         </div>
         <div class="item-nav"><span class="material-icons-outlined" id="icon-menu">local_mall</span><a class="item-nav-text" href="{{ route('produtos.index') }}">Produtos <img src="{{ URL::to('assets/pages/img/simple-arrow.svg') }}" alt=""></a></div>
         <div class="sub-category sub-category-5">
+            <a href="{{ route('produtos.index') }}">Seus Produtos</a>
             <a href="{{ route('produtos.create') }}">Cadastrar Produto</a>
             <a href="#">Order Bumps</a>
             <a href="#">Upsell</a> 

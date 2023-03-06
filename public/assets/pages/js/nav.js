@@ -57,7 +57,7 @@ menuOpitions.forEach((elem, index) => {
                 otherContainers.forEach((c) =>
                     c.classList.remove("sub-category-open-four")
                 );
-                container.classList.toggle("sub-category-open-three");
+                container.classList.toggle("sub-category-open-four");
                 otherElements.forEach((el) => el.classList.remove("active"));
                 elem.classList.toggle("active");
                 break;

@@ -191,8 +191,8 @@
                 </button>
             </div>
 
-            <div class="containerPaymentLinksImage">
-                <img src="{{ asset('assets/landing/img/home/iphone.png') }}" alt="iphone image" />
+            <div class="containerGenericImage">
+                <img src="{{ asset('assets/landing/img/home/po.jpg') }}" alt="iphone image" />
             </div>
         </div>
 
@@ -323,7 +323,7 @@
         </div>
 
         <div class="containerGeneric containerFinancialAutomation">
-            <div class="containerGenericInfo containerGenericInfoWidth40">
+            <div class="containerGenericInfo">
                 <div class="containerGenericTitle containerTitleNoMargin">
                     <h2>Automatização financeira</h2>
                     <p>O dashboard criado para você ter controle de seus ganhos, realizar reembolsos, visualizar
@@ -349,62 +349,6 @@
             </div>
         </div>
 
-        <div class="containerGeneric containerAntifraudSolution">
-            <div class="containerGenericInfo containerGenericInfoWidth40">
-                <div class="containerGenericTitle containerTitleNoMargin">
-                    <h2>Solução anti-fraude</h2>
-                    <p>Inteligência contextual para evitar usuários maliciosos para que você foque no seu crescimento
-                    </p>
-
-                    <ul>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check">
-                            Anti-fraude gratuito</li>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}"
-                                alt="check">Visualize a análise de risco, endereço de IP de compra e demais
-                            informações únicas de cada venda</li>
-                    </ul>
-                </div>
-
-                <button class="buttonGeneric__nobg">Venda online com segurança <img
-                        src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}"
-                        alt="seta para direita" /></button>
-            </div>
-
-            <div class="containerGenericImage">
-                <img src="{{ asset('assets/landing/img/home/anti-fraud.png') }}" alt="pessoa">
-            </div>
-        </div>
-
-
-        <div class="containerGeneric">
-            <div class="containerGenericInfo containerGenericInfoWidth40">
-                <div class="containerGenericTitle containerTitleNoMargin">
-                    <h2>A API de pagamentos mais avançada e fácil de usar</h2>
-                    <p>Uma infraestrutura de pagamentos online para você oferecer uma experiência única para seus
-                        clientes</p>
-
-                    <ul>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check">
-                            Integrações completas para você implementar uma solução de pagamentos white-label</li>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check">
-                            Suporte gratuito especializado para auxiliar você em cada etapa da sua integração</li>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check">
-                            Integrações com Shopify, VTEX, WooCommerce e Magento</li>
-                    </ul>
-                </div>
-
-                <button class="buttonGeneric__nobg">Veja a documentação <img
-                        src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}"
-                        alt="seta para direita" /></button>
-            </div>
-
-            <div class="containerGenericImage">
-                <img src="{{ asset('assets/landing/img/home/api-integration.svg') }}" alt="api intregation">
-            </div>
-
-
-        </div>
-
         <div class="containerGeneric containerPlans containerGetStartedToday">
             <img src="{{ asset('assets/landing/img/home/circles.svg') }}" alt="cinrculo">
             <div class="containerGenericInfo">
@@ -413,7 +357,9 @@
                 </div>
             </div>
 
-            <img src="{{ asset('assets/landing/img/home/cards.svg') }}" alt="card" class="card">
+            <button class="buttonGeneric">Começar Agora <img
+                    src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}"
+                    alt="seta para direita" /></button>
         </div>
     </div>
 
@@ -454,7 +400,7 @@
                     <ul>
                         <li><a href="#">Empresa</a></li>
                         <li><a href="#">Preços</a></li>
-                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Central de ajuda</a></li>
                         <li><a href="#">Termos e privacidade</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
@@ -470,7 +416,7 @@
                 </div>
                 <ul class="footer__list">
                     <li><img src="{{ asset('assets/landing/img/footer/linkedin.svg') }}" alt="likding"></li>
-                    <li><img src="{{ asset('assets/landing/img/footer/instagram.svg') }}" alt="insta"></li>
+                    <li><a target="_blank" href="https://instagram.com/appboomp"><img src="{{ asset('assets/landing/img/footer/instagram.svg') }}" alt="insta"></a></li>
                     <li><img src="{{ asset('assets/landing/img/footer/youtube.svg') }}" alt="youtube"></li>
                     <li><img src="{{ asset('assets/landing/img/footer/twitter.svg') }}" alt="twitter"></li>
                     <li><img src="{{ asset('assets/landing/img/footer/facebook.svg') }}" alt="facebook"></li>

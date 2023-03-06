@@ -20,6 +20,7 @@ header > a > img {
 .containerHeader > ul {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .containerHeader > ul > li > a:hover {

@@ -406,7 +406,7 @@
                     <ul>
                         <li><a href="#">Empresa</a></li>
                         <li><a href="#">Preços</a></li>
-                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Central de ajuda</a></li>
                         <li><a href="#">Termos e privacidade</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
@@ -422,7 +422,7 @@
                 </div>
                 <ul class="footer__list">
                     <li><img src="{{ asset('assets/landing/img/footer/linkedin.svg') }}" alt="likding"></li>
-                    <li><img src="{{ asset('assets/landing/img/footer/instagram.svg') }}" alt="insta"></li>
+                    <li><a target="_blank" href="https://instagram.com/appboomp"><img src="{{ asset('assets/landing/img/footer/instagram.svg') }}" alt="insta"></a></li>
                     <li><img src="{{ asset('assets/landing/img/footer/youtube.svg') }}" alt="youtube"></li>
                     <li><img src="{{ asset('assets/landing/img/footer/twitter.svg') }}" alt="twitter"></li>
                     <li><img src="{{ asset('assets/landing/img/footer/facebook.svg') }}" alt="facebook"></li>

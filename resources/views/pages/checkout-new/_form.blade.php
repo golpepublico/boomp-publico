@@ -41,7 +41,7 @@
         <div class="campo">
             <label for="numeroCartao">Número do Cartão</label>
             <div class="inputGeneric">
-                <div class="genericIcon"><img src="{{ asset('assets/pages/img/checkout/credit-card.svg') }}"
+                <div class="genericIcon"><img src="{{ asset('assets/pages/img/checkout/card.svg') }}"
                         alt=""></div>
                 <input type="text" name="numeroCartao" id="credit">
             </div>
@@ -70,7 +70,7 @@
             <div class="inputGeneric">
                 <div class="genericIcon"><img src="{{ asset('assets/pages/img/checkout/user.svg') }}" alt="">
                 </div>
-                <input type="text" name="holderName" id="name">
+                <input type="text" name="holderName" id="name" maxlength="15">
             </div>
         </div>
 
@@ -84,12 +84,12 @@
                         @if ($i == 1)
                             {
                             <option value={{ $i }}> {{ $i }}x de R$
-                                {{ number_format($product->price, 2, ',', '.') }} </option>
+                                {{ number_format($product->price, 2, ',', '.') }}  Sem Juros</option>
                             }
                         @else
                             {
                             <option value="{{ $i }}" selected> {{ $i }}x de R$
-                                {{ number_format($product->price / $i, 2, ',', '.') }} </option>
+                                {{ number_format($product->price / $i, 2, ',', '.') }}  Sem Juros</option>
                             }
                         @endif;
                     @endfor
@@ -163,7 +163,7 @@
 
         <section class="" id="final">
             <button type="submit" id="btnSubmit" onclick="openLoad()" class="buttonBuy">Finalizar Compra</button>
-            <p class="infoBuyBnt">Após preencher as informações do pedido acima clique “Finamizar Compra”
+            <p class="infoBuyBnt">Após preencher as informações do pedido acima clique “Finalizar Compra”
             Ambiente criptografado e 100% seguro.</p>
             <img src="{{ URL::to('assets/pages/img/img-checkout/compra-segura.png') }}" alt="Compra Segura">
         </section>

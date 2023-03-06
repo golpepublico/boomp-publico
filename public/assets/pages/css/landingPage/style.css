@@ -21,6 +21,7 @@
   border-radius: 1rem;
   position: relative;
   padding: 20px;
+  padding-bottom: 80px;
 }
 
 .containerGenericInfo {
@@ -118,19 +119,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 55%;
+  width: 45%;
 }
 
 .containerGenericImage > img {
-  min-width: 502px;
-  min-height: 397px;
-  border-radius: 1rem;
+  aspect-ratio: 1.212890625/0.86328125;
+  border-radius: 1.5rem;
 }
 
 @media (max-width: 1250px) {
   .containerGenericImage > img {
-    min-width: 430px;
-    min-height: 397px;
+    min-width: 248px;
+    min-height: 176.75px;
   }
 
   .containerGenericInfoWidth40 > .containerGenericTitle > h2 {
@@ -156,8 +156,12 @@
   }
 
   .containerGenericImage > img {
-    min-width: 100%;
-    min-height: auto;
+      /* min-width: 100%; */
+      min-height: auto;
+      /* min-width: auto; */
+      max-width: 557px;
+      aspect-ratio: 1.087890625/0.716796875;
+      max-height: 397px;
   }
 }
 
@@ -274,7 +278,7 @@
 }
 
 .containerPaymentLinks > .containerGenericInfo {
-  width: 45%;
+  width: 50%;
 }
 
 .containerPaymentLinks > .containerGenericInfo > .containerGenericTitle > h2 {
@@ -603,6 +607,9 @@
 }
 
 /* Container Financial Automation */
+.containerFinancialAutomation{
+  padding-bottom: 80px;
+}
 
 .containerFinancialAutomation > .containerFinancialAutomation__Image {
   display: flex;
@@ -648,24 +655,29 @@
 
 /* container Get Started Today */
 .pageWapper > .containerGetStartedToday {
-  height: 350px;
-  padding-left: 80px;
+  height: max-content;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+ 
+}
+.pageWapper > .containerGetStartedToday > .buttonGeneric{
+  background-color: white;
+  color: #2815ff;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pageWapper > .containerGetStartedToday > .containerGenericInfo {
   width: 100%;
+  justify-content: center;
 }
 
 .containerGetStartedToday > .containerGenericInfo > .containerGenericTitle {
   gap: 2px;
-  width: 60%;
-}
-
-.containerGetStartedToday
-  > .containerGenericInfo
-  > .containerGenericTitle
-  > h2 {
-  margin-bottom: 20px;
+  width: 80%;
 }
 
 .containerGetStartedToday > .containerGenericInfo > .containerGenericTitle > p {
@@ -681,15 +693,8 @@
   padding: 0px;
 }
 
-.containerGetStartedToday > .card {
-  right: 80px;
-  left: auto;
-}
 
 @media (max-width: 1024px) {
-  .containerGetStartedToday > .card {
-    display: none;
-  }
 
   .containerGetStartedToday > .containerGenericInfo > .containerGenericTitle {
     gap: 2px;
@@ -697,12 +702,12 @@
   }
 
   .pageWapper > .containerGetStartedToday > .containerGenericInfo {
-    width: 80%;
+    width: 100%;
+    text-align: center;
   }
 
   .pageWapper > .containerGetStartedToday {
-    height: 350px;
-    padding: 0px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
