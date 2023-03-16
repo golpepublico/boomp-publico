@@ -20,7 +20,7 @@
         "moip/moip-sdk-php": "^3.1",
         "nesbot/carbon": "^2.61",
         "picqer/php-barcode-generator": "^2.2",
-        "rmccue/requests": "^2.0",
+        "rmccue/requests": "1.7.0",
         "softr/asaas-php-sdk": "1.0",
         "spatie/laravel-permission": "^5.5",
         "tymon/jwt-auth": "^1.0"

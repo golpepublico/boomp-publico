@@ -32,17 +32,17 @@
             </div>
         </div>
         <div class="div-form">
-            <input type="text" name="holderName" id="" class="digit-field" placeholder="Nome no cartão *">
+            <input type="text" name="holderName" id="" class="digit-field" placeholder="Nome no cartão *" maxlength="15">
         </div>
         <div class="div-form">
             <label for="parcelas" id="labelParcelas"> Parcelas * </label>
             <select name="numberInstallments" id="" class="digit-field">
                 @for ($i = 1; $i <= 12; $i++)
                     @if ($i == 1){
-                        <option value={{$i}} > {{$i}}x de R$ {{ number_format($product->price, 2, ',', '.') }} </option>
+                        <option value={{$i}} > {{$i}}x de R$ {{ number_format($product->price, 2, ',', '.') }} Sem Juros</option>
                     }
                     @else {
-                        <option value="{{$i}}" selected> {{$i}}x de R$ {{ number_format(($product->price) / $i, 2, ',', '.') }} </option>
+                        <option value="{{$i}}" selected> {{$i}}x de R$ {{ number_format(($product->price) / $i, 2, ',', '.') }}  Sem Juros</option>
                     }
                     @endif;
                 @endfor

@@ -33,10 +33,16 @@ body {
 
 #produto {
     margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.productName{
+    text-transform: capitalize;
 }
 
 #resumo {
     text-align: center;
+    margin-top: 80px;
 }
 
 form {
@@ -63,13 +69,16 @@ input, select {
     height: 46px;
     color: #555;
     font-size: 14px;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
+/*
 input:focus, select:focus {
     border: 1px solid #0056B3;
     outline: none;
-}
+} 
+*/
 
 .labelContainer {
     position: relative;
@@ -100,6 +109,7 @@ input:focus, select:focus {
     padding-left: 50px;
     padding-right: 15px;
     border-radius: 20px;
+    font-size: 14px;
 }
 
 .sectionForm {
@@ -107,6 +117,8 @@ input:focus, select:focus {
     box-shadow: 4px 2px 7px rgb(0 0 0 / 5%);
     border-radius: 10px;
     padding: 15px 12px;
+    height: max-content;
+    padding-bottom: 20px;
 }
 
 .campo {
@@ -125,8 +137,51 @@ input:focus, select:focus {
     color: #626262;
 }
 
+.inputGeneric{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.inputGeneric:hover > input,.inputGeneric:hover > .genericIcon{
+    border-color: #0056B3;
+}
+
+.genericIcon{
+    width: 40px;
+    max-height: 46px;
+    background-color: #eee;
+    padding: 10px 11px;
+    border: 1px solid #BBBBBB;
+    border-top-left-radius: 10px;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    transition: ease .3s;
+}
+
+.genericIcon > img{
+    width: 20px;
+}
+
 .container1 i {
     font-size: 22px;
+}
+
+.control-fieldset{
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+}
+
+.img_bandeiras{
+    width: 100%;
+}
+
+.img_bandeiras> img{
+    width: 50px;
+    margin: 2px;
 }
 
 /*Dados*/
@@ -148,6 +203,8 @@ input:focus, select:focus {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 #aprovacao {
@@ -179,7 +236,7 @@ input:focus, select:focus {
     padding: 15px;
     border-radius: 10px;
     border: solid 2px #8a8a8a;
-    width: 50%;
+    width: calc((100% - 20px)/ 2);
     cursor: pointer;
     text-align: left;
     align-items: center;
@@ -231,6 +288,7 @@ input:focus, select:focus {
 #imgProduto img {
     width: 100%;
     height: auto;
+    aspect-ratio: 1/0.39;
     box-sizing: border-box;
 }
 
@@ -307,24 +365,46 @@ input:focus, select:focus {
     justify-content: center;
     height: 80px;
     width: 80px;
+    font-size: 21px;
 }
 /*Final*/
 #final {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
 }
+
+.infoBuyBnt{
+    margin-top: 10px;
+    color: #6f6f6f;
+    font-size: 11px;
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgb(0 190 79 / 40%);
+    }
+    70% {
+      box-shadow: 0 0 0 30px rgb(0 190 79 / 0%);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgb(0 190 79 / 0%);
+    }
+  }
+  
 
 #btnSubmit {
     color: #fff;
-    background-color: #218838;
-    padding: 14px 30px;
-    border-radius: 30px;
-    font-size: 15px;
+    border-radius: 0.5rem;
+    background-color: #05a61d;
+    padding: 18px 30px;
+    font-weight: 400;
+    font-size: 17px;
     width: 100%;
     cursor: pointer;
     transition: ease .3s;
-    font-weight: 500;
+    animation: pulse 3s ease infinite;
 }
 
 #btnSubmit:hover {
@@ -332,7 +412,8 @@ input:focus, select:focus {
 }
 
 #final img {
-    width: 100%;
+    margin: 0 auto;
+    width: 70%;
     height: auto;
 }
 
@@ -404,7 +485,7 @@ input:focus, select:focus {
     gap: 10px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1440px) {
     #containerBtnPag {
         display: flex;
         flex-direction: column;
@@ -413,9 +494,10 @@ input:focus, select:focus {
     .btnPag {
         width: 100%;
     }
+
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1024px) {
     #containerBtnPag {
         font-size: 10px;
     }
@@ -487,11 +569,12 @@ input:focus, select:focus {
     }
 
     #resumo {
-        width: 45%;
+        width: 100%;
     }
 
     #final {
-        width: 45%;
+     
+        width: 100%;
     }
 }
 
