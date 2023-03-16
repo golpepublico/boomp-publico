@@ -30,6 +30,8 @@ use Exception;
 use Illuminate\Http\Response;
 use Moip\Moip;
 use Moip\Auth\BasicAuth;
+use App\Http\Requests\PaymentRequest;
+use Illuminate\Support\Facades\Http;
 
 const MOIP_CANCELADO = 'CANCELLED';
 const MOIP_ANALISE = 'IN_ANALYSIS';
@@ -90,8 +92,54 @@ class CheckoutController extends Controller
         return view('pages.checkout-new.index', compact('product', 'customer'));
     }
 
-    public function payment(Request $request)
+    public function payment(PaymentRequest $request)
     {
+        $dados = $request->all();
+
+        $response = Http::withHeaders([
+            'Authorization' => 'Bearer '. env('KEY_WE_PAYMENTS'),
+            'Content-Type'  => 'application/json'
+        ]);
+
+        if ($dados['payment_option']['boleto']) {
+            $response->post('https://api.sandbox.wepayout.com.br/v1/payout/payments', [
+                'amount' => 1000,
+                'custom_code' => 'YOURAPPCODE',
+                'notification_url' => 'https://test.requestcatcher.com/',
+                'beneficiary' => (object) [
+                  'name' => 'The Name',
+                  'bank_code' => '147',
+                  'bank_branch' => '0000',
+                  'bank_branch_digit' => '1',
+                  'account' => '1030000',
+                  'account_digit' => '1',
+                  'account_type' => 'CHECKING',
+                  'document' => '12533009091',
+                  'document_type' => 'cpf'
+                ],
+                'legal_entity_name' => "Your client\'s name",
+                'website' => "Your client\'s website"
+            ]);
+
+        }
+
+        if ($dados['payment_option']['credit_card']) {
+            
+        }
+
+        if ($dados['payment_option']['pix']) {
+            
+        }
+
+        /* Em caso de falha lança exception */
+        $response->throw();
+    }
+
+    public function payment_old(Request $request)
+    {
+        exit;
+        return true;
+
         $validator = Validator::make($request->all(), [
                 'name'          => 'required|string|max:100',
                 'payment_option' => 'required|string|max:100',
