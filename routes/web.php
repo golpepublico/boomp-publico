@@ -6,6 +6,13 @@ Route::get('/', function () {
     return view('pages.index');
 });
 
+// Route::get('/plans', function () {
+//     return view('plans.index');
+// });
+
+
+Route::get('/planos', 'PlansController@index')->name('plans.index');
+
 //rota para checkout com slug da loja e produto
 Route::group(['prefix' => 'checkout'], function () {
     Route::get("/status/{idpay}", "CheckoutController@status")->name('checkout.status');
@@ -24,6 +31,7 @@ Route::group(['prefix' => 'app', 'middleware' => 'auth'], function () {
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
     Route::get('/conta', 'HomeController@index')->name('conta.index');
     Route::get('/produtos', 'HomeController@index')->name('produtos.index');
+  
 
     Route::group(['prefix' => 'wallet'], function () {
         Route::get('/wallet', 'WalletController@index')->name('wallet.index');
