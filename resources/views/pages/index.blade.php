@@ -174,13 +174,11 @@
                     <ul>
                         <li>
                             <img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="valid" />
-                            Retentativas inteligentes, Order bump, Upsell em 1 clique,
-                            Parcelas Inteligentes, Produtos ilimitados e muito mais!
+                            Escolha o Link de Pagamento e receba suas vendas com uma tecnologia simples, fácil e rápida.
                         </li>
                         <li>
                             <img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="valid" />
-                            Defina os métodos de pagamentos e em até quantas parcelas deseja
-                            receber por link de pagamento criado
+                            Utilize nosso checkout e integre com sua plataforma preferida
                         </li>
                     </ul>
                 </div>
@@ -322,32 +320,6 @@
 
         </div>
 
-        <div class="containerGeneric containerFinancialAutomation">
-            <div class="containerGenericInfo">
-                <div class="containerGenericTitle containerTitleNoMargin">
-                    <h2>Automatização financeira</h2>
-                    <p>O dashboard criado para você ter controle de seus ganhos, realizar reembolsos, visualizar
-                        detalhes de suas vendas e muito mais.</p>
-
-                    <ul>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check">
-                            Múltiplos CNPJs por acesso</li>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check">
-                            Disponível para Android e iOS</li>
-                        <li><img src="{{ asset('assets/landing/img/global/check-icon.svg') }}" alt="check"> Mapa
-                            de vendas em tempo real</li>
-                    </ul>
-                </div>
-
-                <a href="{{ route('login') }}"><button class="buttonGeneric__nobg">Acesse e veja você mesmo <img
-                            src="{{ asset('assets/landing/img/svg/arrow-main-color.svg') }}"
-                            alt="seta para direita" /></button></a>
-            </div>
-
-            <div class="containerGenericImage">
-                <img src="{{ asset('assets/pages/img/team-huddle.jpg') }}" alt="automatic financial">
-            </div>
-        </div>
 
         <div class="containerGeneric containerPlans containerGetStartedToday">
             <img src="{{ asset('assets/landing/img/home/circles.svg') }}" alt="cinrculo">
@@ -426,6 +398,19 @@
     </footer>
 
     <script type="module" src="{{asset('assets/landing/js/script.js')}}"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/640663ea4247f20fefe45a24/1gqsfcjgu';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>
